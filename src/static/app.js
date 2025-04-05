@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function to fetch activities from API
   async function fetchActivities() {
     try {
-      const response = await fetch("/activities");
+      const response = await fetch("http://localhost:8000/activities"); // 必要に応じてURLを修正
       const activities = await response.json();
 
       // Clear loading message
